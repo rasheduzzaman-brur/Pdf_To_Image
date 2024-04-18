@@ -1,5 +1,3 @@
-# Pdf_To_Image
-This reopository convert the pdf file into image
 # PDF to Image Converter Application
 
 This Python application converts PDF files to images using the `pdf2image` module and requires the `poppler` library. Follow the instructions below to set up and use the application.

@@ -9,10 +9,6 @@ def pdf_to_jpg(pdf_files, output_folder):
         # Convert PDF to images
         images = convert_from_path(pdf_file, poppler_path='C:/Program Files/poppler-24.02.0/Library/bin')
         for i, image in enumerate(images):
-            #  # Generate a random choice between 0 and 1 (for 90 and 270 degrees)
-            # rotation_choice = random.choice([0, 90, 270, 180])
-            # # Rotate the image
-            # rotated_image = image.rotate(rotation_choice, expand=True)
             # Save each page as JPG
             image.save(f"{output_folder}/{base_filename}_page_0{i+1}.jpg", "JPEG")
 
